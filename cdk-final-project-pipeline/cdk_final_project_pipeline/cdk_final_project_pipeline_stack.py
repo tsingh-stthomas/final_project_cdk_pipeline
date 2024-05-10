@@ -144,7 +144,7 @@ class CdkFinalProjectPipelineStack(Stack):
             action_name="Source",
             repository=app_project_repo,
             output=source_output,
-            branch="master"
+            branch="main"
         )
         app_code_pipeline.add_stage(stage_name="Source", actions=[source_action])
 
